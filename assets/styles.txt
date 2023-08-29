@@ -1,0 +1,148 @@
+/* Define main theme variables to be used */
+:root {
+    --custom_accent:  #3f4f75;
+    --custom_accent_negative:  #f4564e;
+    --custom_accent_positive:  #357e94;
+    --custom_background_content:  #fff;
+    --custom_background_page:  #f1f2f4;
+    --custom_border:  white;
+    --custom_breakpoint_font:  1200px ;
+    --custom_breakpoint_stack_blocks:  700px ;
+    --custom_card_box_shadow:  0px 0px 0px rgba(0;0;0;0) ;
+    --custom_card_margin:  15px ;
+    --custom_card_padding:  5px ;
+    --custom_card_header_box_shadow:  0px 0px 0px rgba(0;0;0;0) ;
+    --custom_card_header_margin:  0px ;
+    --custom_card_header_padding:  10px ;
+    --custom_dbc_info: #00769F;
+    --custom_dbc_success: #00CCA4;
+    --custom_dbc_warning: #FADD6A;
+    --custom_dbc_danger: #F76065;
+    --custom_font_family:  "Open Sans";
+    --custom_font_size: 17px;
+    --custom_font_size_smaller_screen: 15px ;
+    --custom_font_family_header: "Domine" ;
+    --custom_font_size_header: 24px ;
+    --custom_font_family_headings: "Domine" ;
+    --custom_header_box_shadow: none ;
+    --custom_title_capitalization: capitalize ;
+    --custom_header_content_alignment: "spread" ;
+    --custom_header_margin: 0px 0px 15px 0px ;
+    --custom_header_padding: 0px ;
+    --custom_text: #20293D ;
+    --custom_report_font_family: "Computer Modern" ;
+    --custom_report_font_size: 12px ;
+    --custom_report_background_page: white ;
+    --custom_report_background_content: #FAFBFC ;
+    --custom_report_text: black; 
+}
+
+/* Override ddk-container props */
+.ddk-container {
+    background-color: var(--custom_background_page) !important;
+}
+
+/* Override flowchart props */
+.ddk-container .react-flow__node-default {
+    font-family: var(--custom_font_family) !important;
+    font-size: inherit !important;
+    color: var(--custom_body_text) !important;
+    background-color: var(--custom_background_content) !important;
+    border-color: var(--custom_control_text)
+}
+
+.ddk-container .react-flow__node-output {
+    font-family: var(--custom_font_family) !important;
+    font-size: inherit !important;
+    color: var(--custom_body_text) !important;
+    background-color: var(--custom_background_content) !important;
+    border-color: var(--custom_accent_negative)
+}
+
+.ddk-container .react-flow__node-input {
+    font-family: var(--custom_font_family) !important;
+    font-size: inherit !important;
+    color: var(--custom_body_text) !important;
+    background-color: var(--custom_background_content) !important;
+    border-color: var(--custom_accent_positive)
+}
+
+.ddk-container .react-flow__minimap{
+    background-color: var(--custom_background_content) !important;
+}
+
+.ddk-container .react-flow__minimap-node{
+    fill: var(--custom_accent) !important;
+}
+
+.ddk-container .react-flow__minimap-mask{
+    fill: var(--custom_border) !important;
+}
+
+.ddk-container .react-flow__controls-button{
+    background: var(--custom_accent) !important;
+}
+
+/* Override card props */
+.ddk-container .ddk-card,
+.ddk-container .ddk-card .card-header {
+    background-color: var(--custom_background_content) !important; 
+}
+
+/* Override basic header tags */
+.ddk-container h1,
+.ddk-container h2,
+.ddk-container h3,
+.ddk-container h4,
+.ddk-containe h5,
+.ddk-container h6 {
+    font-family: var(--custom_text) !important;
+    color:  var(--custom_accent) !important;
+}
+
+/* Override dropdown props */
+.ddk-container .dash-dropdown > .Select {
+    background-color: var(--custom_background_content) !important;
+}
+
+
+/* Buttons */ 
+.ddk-container.ddk-container a {
+    color:var(--custom_accent) !important; 
+}
+.ddk-container.ddk-container a:hover {
+    color: var(--custom_accent) !important; 
+}
+
+.ddk-container.ddk-container button:not(.btn):not(.edit-theme-button):not([type="button"]),
+.ddk-container.ddk-container input[type="submit"],
+.ddk-container.ddk-container input[type="reset"],
+.ddk-container.ddk-container input[type="button"] {
+    color : var(--custom_text) !important;
+    border-color:  var(--custom_accent) !important;
+    background-color : var(--custom_accent) !important;
+}
+
+/* Slider */
+.ddk-container .rc-slider-track {
+    background-color: var(--custom_accent) !important;
+}
+
+.ddk-container .rc-slider-handle{
+    background-color: var(--custom_accent) !important;
+    border-color: var(--custom_accent) !important;
+}
+
+/* Text area and select */
+.ddk-container.ddk-container textarea,
+.ddk-container.ddk-container select {
+
+    background-color: var(--custom_background_content) !important;
+    color: var(--custom_text) !important;
+    border-color: var(--custom_text) !important;
+}   
+
+/* Popover width: https://github.com/facultyai/dash-bootstrap-components/issues/12 */
+.popover {
+    max-width: 4000px;
+}

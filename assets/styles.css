@@ -1,0 +1,20 @@
+
+/* Popover width: https://github.com/facultyai/dash-bootstrap-components/issues/12 */
+.popover {
+    min-width: 400px;
+    max-width: 75%;
+}
+
+.btn-container {
+    padding: 0.5rem !important;
+}
+
+.react-datepicker__input-container, .sc-kEqXSa.bAVzgZ {
+    display: block;
+    width: 100%;
+}
+
+.sc-iqAclL.jibPFy {
+    display: block;
+    width: 100%;
+}
