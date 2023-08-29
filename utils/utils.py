@@ -715,13 +715,13 @@ def create_dataset_popover_body(dataset_name, redis_instance, index, session_id)
         columnDefs=columnDefs,
         rowData=table_data,
         style={"min-width": "50vw", "height": "400px", "padding": "1rem"},
-        rowSelection="multiple",
+        # rowSelection="multiple",
         # columnSize="sizeToFit",
         defaultColDef=dict(
             resizable=True,
         ),
-        enableEnterpriseModules=True,
-        licenseKey="LICENSE_KEY_HERE",
+        # enableEnterpriseModules=True,
+        # licenseKey="LICENSE_KEY_HERE",
     )
 
     graph = ddk.Graph(
